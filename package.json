@@ -1,0 +1,19 @@
+{
+  "name": "dted-data-downloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archiver": "^5.3.1",
+    "axios": "^1.3.2",
+    "axios-cookiejar-support": "^4.0.6",
+    "delay": "^5.0.0",
+    "tough-cookie": "^4.1.2"
+  }
+}
