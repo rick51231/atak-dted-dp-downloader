@@ -329,7 +329,7 @@ async function getDataFormat() {
         let resDataFormatId = await http.get('https://earthexplorer.usgs.gov/scene/downloadoptions/'+dataId[1]+'/SRTM1N52E013V3');
 
         let resultFormatted = resDataFormatId.data.replace(/\r?\n|\r/g, '').replace(/( +)/ig, ' ');
-        let dataFormatId = resultFormatted.match(/data-productId="([^"]+)" title="Download Product" >Download<\/button> <\/div> <div class="name"> DTED 1 Arc-second/i);
+        let dataFormatId = resultFormatted.match(/data-productId="([^"]+)" title="Download Product" >Download<\/button> <\/div> <div class="name px-0" style="width:auto;"> DTED 1 Arc-second/i);
 
         if(dataFormatId===null) {
             console.error('Cannot get data format id');
